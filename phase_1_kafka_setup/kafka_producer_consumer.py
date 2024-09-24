@@ -63,7 +63,6 @@ def consume_message():
     # Infinite loop to read and print messages from the topic
     for message in consumer:
         print(message.value)
-        print("got data")
 
 if __name__ == '__main__':
     send_message()
